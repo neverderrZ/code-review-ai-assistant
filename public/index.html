@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Review</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Code Review Assistant</h1>
+        
+        <div class="input-section">
+            <textarea 
+                id="codeInput" 
+                placeholder="Введите ваш код (например: const x = 10;)"
+                spellcheck="false"
+            ></textarea>
+            <button id="submitBtn">Анализировать код</button>
+        </div>
+        
+        <div id="loadingIndicator">Идёт анализ кода... Подождите</div>
+        
+        <div id="results" class="results-container"></div>
+    </div>
+
+    <script type="module" src="/src/app.js"></script>
+</body>
+</html>
